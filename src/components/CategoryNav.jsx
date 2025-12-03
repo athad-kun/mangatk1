@@ -26,7 +26,7 @@ export function CategoryNav({ onCategorySelect }) {
           </div>
 
           {/* Rating Filter */}
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <span className="text-gray-600 dark:text-gray-300">Rating:</span>
             <div className="flex space-x-1">
               {ratings.map(rating => (
@@ -47,7 +47,7 @@ export function CategoryNav({ onCategorySelect }) {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

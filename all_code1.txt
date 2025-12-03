@@ -1,0 +1,15 @@
+Get-ChildItem -Path src -Recurse -Include *.js, *.jsx, *.ts, *.tsx, *.css | ForEach-Object {
+    # إضافة الفاصل والعنوان أولاً
+    "`n`n==================== FILE: $($_.FullName) ====================`n`n" | Out-File -Append all_code.txt
+
+    # استخدام -LiteralPath لضمان قراءة الملفات ذات الأقواس المربعة
+    Get-Content -LiteralPath $_.FullName | Out-File -Append all_code.txt
+}
+
+
+
+
+Set-Location D:\MangaTk\mangatk
+
+
+

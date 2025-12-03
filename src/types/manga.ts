@@ -12,3 +12,19 @@ export interface Manga {
   views: number;
   category: string;
 }
+// تعريف شكل بيانات الفصل
+export interface Chapter {
+  id: string;
+  mangaId: string;
+  title: string;
+  number: number;
+  releaseDate?: string;
+}
+
+// تعريف فلاتر البحث
+export interface FilterState {
+  query?: string;
+  status?: string;
+  categories?: string[];
+  sortBy?: 'name' | 'latest' | 'popular' | 'rating';
+}
