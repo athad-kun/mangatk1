@@ -1,9 +1,8 @@
 {
   "/page": "app/page.js",
   "/read/[chapterId]/page": "app/read/[chapterId]/page.js",
-  "/dashboard/manga/add/page": "app/dashboard/manga/add/page.js",
-  "/dashboard/manga/[id]/page": "app/dashboard/manga/[id]/page.js",
   "/dashboard/manga/page": "app/dashboard/manga/page.js",
   "/dashboard/ratings/page": "app/dashboard/ratings/page.js",
-  "/dashboard/comments/page": "app/dashboard/comments/page.js"
+  "/dashboard/comments/page": "app/dashboard/comments/page.js",
+  "/dashboard/manga/[id]/edit/page": "app/dashboard/manga/[id]/edit/page.js"
 }
