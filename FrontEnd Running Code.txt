@@ -1,0 +1,2 @@
+cd D:\gndhn\mangatk\frontend
+npm run dev

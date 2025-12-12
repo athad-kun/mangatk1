@@ -1,0 +1,5 @@
+cd D:\gndhn\mangatk
+django\scripts\activate
+cd backend
+python manage.py runserver
+FOR /F "tokens=*" %G IN (D:\gndhn\mangatk\BackEndRunningCode.txt) DO %G 
