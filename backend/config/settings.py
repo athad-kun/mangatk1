@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     
     # Third-party apps
     'rest_framework',
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # CORS middleware
@@ -187,3 +189,6 @@ IMGBB_API_URL = 'https://api.imgbb.com/1/upload'
 # backend/config/settings.py
 
 AUTH_USER_MODEL = 'manga.User'
+
+CORS_ALLOW_ALL_ORIGINS = True
+ALLOWED_HOSTS = ['*']
