@@ -36,7 +36,7 @@ psycopg2-binary==2.9.11
 PyJWT==2.10.1
 PyMySQL==1.1.2
 python-dateutil==2.9.0.post0
-python-magic-bin==0.4.14
+python-magic
 rarfile==4.2
 redis==5.0.1
 requests==2.32.5
