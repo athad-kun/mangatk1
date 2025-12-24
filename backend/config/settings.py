@@ -91,6 +91,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'PORT': '3306',
 #     }
 # }
+
 import dj_database_url # في أعلى الملف
 
 # ... باقي الإكواد ...
@@ -98,7 +99,7 @@ import dj_database_url # في أعلى الملف
 DATABASES = {
     'default': dj_database_url.config(
         # استبدل الرابط أدناه بالرابط الذي نسخته من Supabase
-        default='postgresql://postgres:amgad770038238@db.blfcmkpqjtioivoemfpr.supabase.co:5432/postgres',
+        default='postgresql://postgres.blfcmkpqjtioivoemfpr:amgad770038238@aws-1-ap-south-1.pooler.supabase.com:5432/postgres',
         conn_max_age=600
     )
 }
