@@ -169,6 +169,8 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
+    'UNICODE_JSON': True,
+    'COMPACT_JSON': False,
 }
 
 # JWT Configuration
