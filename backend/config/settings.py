@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     
     # Third-party apps
     'rest_framework',
@@ -96,7 +95,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 import dj_database_url # في أعلى الملف
 
-# ... باقي الإكواد ...
+# # ... باقي الإكواد ...
 
 DATABASES = {
     'default': dj_database_url.config(
