@@ -97,12 +97,20 @@ import dj_database_url # في أعلى الملف
 
 # # ... باقي الإكواد ...
 
+db_config = dj_database_url.config(
+    # استبدل الرابط أدناه بالرابط الذي نسخته من Supabase
+    default='postgresql://postgres.blfcmkpqjtioivoemfpr:amgad770038238@aws-1-ap-south-1.pooler.supabase.com:5432/postgres',
+    conn_max_age=600,
+)
+
+# Add PostgreSQL-specific options
+db_config['OPTIONS'] = {
+    'charset': 'utf8mb4',
+    'use_unicode': True,
+}
+
 DATABASES = {
-    'default': dj_database_url.config(
-        # استبدل الرابط أدناه بالرابط الذي نسخته من Supabase
-        default='postgresql://postgres.blfcmkpqjtioivoemfpr:amgad770038238@aws-1-ap-south-1.pooler.supabase.com:5432/postgres',
-        conn_max_age=600
-    )
+    'default': db_config
 }
 
 # Password validation
